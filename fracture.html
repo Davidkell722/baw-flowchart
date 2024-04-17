@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fracture Options</title>
+    <title>Fracture/Sprains Options</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
             padding-top: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-evenly; /* Evenly spaces the buttons with equal space around them */
+            align-items: center;           /* Centers the buttons vertically */
+            height: 100vh;                 /* Full height of the viewport */
+            flex-wrap: wrap;               /* Allows items to wrap onto the next line */
+            gap: 20px;                     /* Space between buttons */
         }
         .button {
             background-color: #28a745;
@@ -25,8 +33,11 @@
     </style>
 </head>
 <body>
-    <h1>Fracture: Choose an Extremity</h1>
+    <h1>Fracture: Where is the fracture?</h1>
+<div class="container">
     <a href="upper-extremity.html" class="button">Upper Extremity</a>
     <a href="lower-extremity.html" class="button">Lower Extremity</a>
+    <a href="ankle-sprain.html" class="button">Ankle Sprains</a>
+</div>
 </body>
 </html>
