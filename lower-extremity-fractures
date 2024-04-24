@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lower Extremity Fractures - Medical Clinic Flowchart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lower Extremity Fractures</h1>
+        <nav>
+            <a href="/fracture.html" class="button">Back to Fracture</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Select the type of fracture:</h2>
+            <div class="button-container">
+                <a href="femur-fracture.html" class="button">Femur Fractures</a>
+                <a href="tibia-fracture.html" class="button">Tibia Fractures</a>
+                <a href="fibula-fracture.html" class="button">Fibula Fractures</a>
+                <a href="toe-fracture.html" class="button">Toe Fractures</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Medical Clinic Flowchart. Streamlining patient care.</p>
+    </footer>
+</body>
+</html>
