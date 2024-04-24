@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Fracture/Sprains Options</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding-top: 50px;
-        }
-        .container {
-            display: flex;
-            justify-content: space-evenly; /* Evenly spaces the buttons with equal space around them */
-            align-items: center;           /* Centers the buttons vertically */
-            height: 100vh;                 /* Full height of the viewport */
-            flex-wrap: wrap;               /* Allows items to wrap onto the next line */
-            gap: 20px;                     /* Space between buttons */
-        }
-        .button {
-            background-color: #28a745;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #1e7e34;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractures - Medical Clinic Flowchart</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Fracture: Where is the fracture?</h1>
-<div class="container">
-    <a href="upper-extremity.html" class="button">Upper Extremity Fractures</a>
-    <a href="lower-extremity-fractures.html" class="button">Lower Extremity Fractures</a>
-    <a href="buckle-fractures.html" class="button">Buckle Fractures (Upper and Lower)</a>
-    <a href="ankle-sprains.html" class="button">Ankle Sprains</a>
-</div>
-</body>
-</html>
+    <header>
+        <h1> What type/where is the location of the Fractures?</h1>
+        <nav>
+            <a href="/index.html" class="button">Back to Main Page</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Select the type of fracture:</h2>
+            <div class="button-container">
+                <a href="upper-extremity.html" class="button">Upper Extremity Fractures</a>
+                <a href="lower-extremity-fractures.html" class="button">Lower Extremity Fractures</a>
+                <a href="buckle-fractures.html" class="button">Buckle Fractures (Upper and Lower)</a>
+                <a href="ankle-sprains.html" class="button">Ankle Sprains</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Medical Clinic Flowchart. Streamlining patient care.</p>
+    </footer>
+
