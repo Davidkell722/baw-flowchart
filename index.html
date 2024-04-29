@@ -2,42 +2,15 @@
 <html>
 <head>
     <title>Brendan's Clinical Flowchart</title>
-   <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            display: flex;
-            justify-content: center; /* Centers horizontally */
-            align-items: center;     /* Centers vertically */
-            height: 100vh;           /* Full height of the viewport */
-            flex-wrap: wrap;         /* Allows items to wrap onto the next line */
-            gap: 20px;               /* Space between buttons */
-        }
-        .button {
-            padding: 15px 30px;    /* Size of the buttons */
-            margin: 10px;          /* Additional spacing around the buttons */
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;       /* Changes the mouse cursor on hover */
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
-    <h1>Welcome to the Brendan's Clinic Flowchart</h1>
-    <h2>Use this as a resource to format notes and appropriate dot phrases depending on the injury</h2>
-     <div class="container">
+    <div class="container">
+        <h1>Welcome to Brendan's Clinic Flowchart</h1>
+        <h2>Use this as a resource to format notes and appropriate dot phrases depending on the injury</h2>
         <a href="fracture.html" class="button">Fracture</a>
+        <a href="acl-injuries.html" class="button">ACL Injuries</a> <!-- New button for ACL Injuries -->
+        <a href="patellar-dislocations.html" class="button">Patellar Dislocations</a> <!-- New button for Patellar Dislocations -->
     </div>
 </body>
 </html>
