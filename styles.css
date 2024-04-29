@@ -100,6 +100,13 @@ footer p {
     padding: 0 20px;
 }
 
+.rightImage {
+    float: right; /* This will make the image float to the right of the container */
+    margin-left: 20px; /* Adds space between the text and the image */
+    width: 30%; /* Adjusts the width of the image to be 30% of the container - adjust as needed */
+    height: auto; /* Keeps the image aspect ratio intact */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
