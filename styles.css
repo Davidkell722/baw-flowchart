@@ -26,13 +26,22 @@ header h1 {
     margin: 0;
 }
 
+div {
+    flex-grow: 1;
+}
+
 /* Section Styles */
 section {
+    display: flex;
     margin-bottom: 20px;
+    text-align: left;
     padding: 20px;
+    align-items: center;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+
 }
 
 section h2 {
@@ -115,11 +124,9 @@ p {
 }
 
 .rightImage {
-    float: right; /* This will make the image float to the right of the container */
-    margin-left: 20px; /* Adds space between the text and the image */
-    width: 30%; /* Adjusts the width of the image to be 30% of the container - adjust as needed */
-    height: auto; /* Keeps the image aspect ratio intact */
-    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 30%; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio intact */
+    margin-left: 20px; /* Space between the text and the image */
 }
 
 /* Responsive Design */
