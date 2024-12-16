@@ -12,20 +12,46 @@
         <h2>Use this as a resource to format notes and appropriate dot phrases depending on the injury</h2>
     </header>
    
-    
     <main class="container">
         <section>
             <h2>Select the type of injury:</h2>
              <div class="button-container">
                 <a href="fracture.html" class="button">Fracture</a>
-                <a href="acl-injuries.html" class="button">ACL Injuries</a> <!-- New button for ACL Injuries -->
-                <a href="patellar-dislocations.html" class="button">Patellar Dislocations</a> <!-- New button for Patellar Dislocations -->
+                <a href="acl-injuries.html" class="button">ACL Injuries</a>
+                <a href="patellar-dislocations.html" class="button">Patellar Dislocations</a>
              </div>
         </section>
     </main>
 
     <footer>
         <p>© 2024 BAW's Clinic Flowchart. Streamlining patient care.</p>
+        <div id="last-updated" style="font-size: 0.9em; color: gray; text-align: center; margin-top: 10px;">
+            Last updated: Loading...
+        </div>
     </footer>
+
+    <script>
+        const apiURL = 'https://api.github.com/repos/davidkell722/baw-flowchart/commits';
+
+        fetch(apiURL)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch commit data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const lastCommitDate = new Date(data[0].commit.committer.date);
+                const formattedDate = lastCommitDate.toLocaleString('en-US', { 
+                    dateStyle: 'medium', 
+                    timeStyle: 'short' 
+                });
+                document.getElementById('last-updated').textContent = `Last updated: ${formattedDate}`;
+            })
+            .catch(error => {
+                console.error('Error fetching last commit date:', error);
+                document.getElementById('last-updated').textContent = 'Last updated: Unable to fetch';
+            });
+    </script>
 </body>
 </html>
