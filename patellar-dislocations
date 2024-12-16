@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patellar Dislocation Clinic Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Is this a first-time dislocation or recurrent dislocation?</h1>
+        <nav>
+            <a href="/baw-flowchart/index.html" class="button">Back to Main Page</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Select from the following</h2>
+            <div class="button-container">
+                <a href="fractures/first-time-pfi.html" class="button">First-Time Dislocation</a>
+                <a href="fractures/recurrent-pfi-new.html" class="button">Recurrent Dislocation (New Patient)</a>
+                <a href="fractures/recurrent-pfi-fu.html" class="button">Recurrent Dislocation (Follow-up)</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Medical Clinic Flowchart. Streamlining patient care.</p>
+    </footer>
+</body>
+</html>
